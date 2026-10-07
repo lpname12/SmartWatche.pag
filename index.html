@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CATÁLOGO DE SMARTWATCHES</title>
+
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background-color: #edf2f4;
+			margin: 0;
+            color: #2b2d42;
+		}
+        
+		header {
+			background: linear-gradient(135deg, #2b2d42, #1a1b26);
+			color: #ffffff;
+			text-align: center;
+			padding: 50px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+		}
+
+        header h1 {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+		nav {
+			background-color: #8d99ae;
+			text-align: center;
+			padding: 18px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		}
+        
+		nav a {
+			margin: 0 20px;
+			text-decoration: none;
+			color: #ffffff;
+			font-weight: 600;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+		}
+
+        nav a:hover {
+            color: #2b2d42;
+        }
+
+		.catalogo {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+			gap: 30px;
+			padding: 40px;
+            max-width: 1300px;
+            margin: 0 auto;
+		}
+        
+		.producto {
+			background-color: #ffffff;
+			padding: 25px 20px;
+			text-align: center;
+			border: none;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+			transition: all 0.3s ease;
+            position: relative;
+		}
+
+		.producto:hover {
+			transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+		}
+
+		.producto img {
+			width: 100%;
+			height: 180px;
+			object-fit: contain;
+            display: block;
+            margin: 0 auto 15px;
+		}
+
+		.precio {
+			color: #d90429;
+			font-size: 24px;
+			font-weight: 800; 
+            margin: 15px 0;
+		}
+
+        .producto h3 {
+            color: #2b2d42;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+
+        .producto p {
+            color: #6c757d;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+		.boton {
+			display: inline-block;
+            width: 80%;
+			background-color: #ef233c;
+			color: white;
+			padding: 12px;
+			text-decoration: none;
+			margin-top: 15px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+		}
+
+        .boton:hover {
+            background-color: #d90429;
+        }
+
+        .boton:active {
+            transform: scale(0.95);
+        } 
+         
+		footer {
+            background: #2b2d42;
+			color: white;
+			text-align: center;
+			padding: 30px 20px;
+            margin-top: 40px;
+		}		
+
+	</style>
+</head>
+<body>
+
+<header>
+	<h1> SmartWatch </h1>
+	<p>Tecnología y estilo en tu muñeca</p>
+</header>
+
+<nav>
+	<a href="#"> INICIO </a>
+	<a href="#"> CATÁLOGO </a>
+	<a href="#"> OFERTAS </a>
+	<a href="#"> SOPORTE </a>
+	<a href="#" id="enlaceCarrito" style="color: #f1c40f;">🛒 CARRITO (0)</a>
+</nav>
+
+<h2 style="text-align: center; margin-top: 40px; color: #2b2d42; font-size: 28px;"> Modelos </h2>
+
+<div class="catalogo">
+
+	<div class="producto">
+		<img src="SmartWatch 1.jpg" alt="Smartwatch 1">
+		<h3> Quantum X </h3>
+		<p> Pantalla OLED 1.7" | ECG </p>
+		<p class="precio">S/ 1,890.00 </p>
+		<a href="pagina 1.html" class="boton"> Comprar </a>
+	</div>
+
+	<div class="producto">
+        <img src="SmartWatch 2.jpg" alt="Smartwatch 2">
+        <h3> Nebula Fit </h3>
+        <p> IP68 | 15 días batería </p>
+        <p class="precio">S/ 1,550.00 </p>
+        <a href="pagina 2.html" class="boton">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 3.jpg" alt="Smartwatch 3">
+        <h3> Chrono V </h3>
+        <p> GPS Avanzado | Sensor SpO2 </p>
+        <p class="precio">S/ 2,100.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 4.jpg" alt="Smartwatch 4">
+        <h3> Zenith Pro </h3>
+        <p> Cristal Zafiro | Caja de Titanio </p>
+        <p class="precio">S/ 3,450.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 5.jpg" alt="Smartwatch 5">
+        <h3> Pulse Core </h3>
+        <p> Pantalla 1.4" LCD | Llamadas BT </p>
+        <p class="precio">S/ 650.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 6.jpg" alt="Smartwatch 6">
+        <h3> Aether S </h3>
+        <p> Control de Estrés | Carga Inalámbrica </p>
+        <p class="precio">S/ 1,150.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 7.jpg" alt="Smartwatch 7">
+        <h3> Nova Track </h3>
+        <p> 90 Modos de Deporte | Ligero </p>
+        <p class="precio">S/ 890.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 8.jpg" alt="Smartwatch 8">
+        <h3> Orion Max </h3>
+        <p> Pantalla 1.9" Edge | 4G LTE </p>
+        <p class="precio">S/ 2,750.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 9.jpg" alt="Smartwatch 9">
+        <h3> Titan Forge </h3>
+        <p> Estándar Militar | Batería 30 días </p>
+        <p class="precio">S/ 3,100.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 10.jpg" alt="Smartwatch 10">
+        <h3> Aura Sync </h3>
+        <p> Diseño Minimalista | Monitor de Sueño </p>
+        <p class="precio">S/ 640.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 11.jpg" alt="Smartwatch 11">
+        <h3> Voxel Run </h3>
+        <p> GPS Dual | Métricas de Carrera </p>
+        <p class="precio">S/ 1,320.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 12.jpg" alt="Smartwatch 12">
+        <h3> Eclipse G </h3>
+        <p> Pantalla AMOLED 1.5" | NFC Activo </p>
+        <p class="precio">S/ 1,950.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 13.jpg" alt="Smartwatch 13">
+        <h3> Horizon LTE </h3>
+        <p> e-SIM | Streaming de Música </p>
+        <p class="precio">S/ 2,400.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 14.jpg" alt="Smartwatch 14">
+        <h3> Vector Z </h3>
+        <p> Bisel Rotatorio | Asistente de Voz </p>
+        <p class="precio">S/ 990.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 15.jpg" alt="Smartwatch 15">
+        <h3> Stratos Fit </h3>
+        <p> Altímetro | Barómetro Integrado </p>
+        <p class="precio">S/ 1,450.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 16.jpg" alt="Smartwatch 16">
+        <h3> Helix V2 </h3>
+        <p> Sensor de Temperatura | Oxígeno en Sangre </p>
+        <p class="precio">S/ 2,200.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 17.jpg" alt="Smartwatch 17">
+        <h3> Apollo X </h3>
+        <p> Cristal Curvo 3D | 5ATM Agua </p>
+        <p class="precio">S/ 1,750.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 18.jpg" alt="Smartwatch 18">
+        <h3> Solstice Pro </h3>
+        <p> Materiales Premium | Mapeo Offline </p>
+        <p class="precio">S/ 3,800.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 19.jpg" alt="Smartwatch 19">
+        <h3> Kinetix </h3>
+        <p> Correa Deportiva | Contador de Pasos </p>
+        <p class="precio">S/ 550.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+        <img src="SmartWatch 20.jpg" alt="Smartwatch 20">
+        <h3> Vanguard 3 </h3>
+        <p> Procesador Dual | Memoria 32GB </p>
+        <p class="precio">S/ 4,200.00 </p>
+        <a class="boton" href="#">Comprar</a>
+    </div>
+</div>
+<script>
+    window.onload = function() {
+        
+        let carrito = JSON.parse(localStorage.getItem('carritoTienda')) || [];
+        
+        
+        let totalItems = 0;
+        carrito.forEach(item => {
+            totalItems += item.cantidad;
+        });
+        
+        
+        document.getElementById('enlaceCarrito').innerText = "🛒 CARRITO (" + totalItems + ")";
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quantum X - Detalles</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #edf2f4;
+            color: #2b2d42;
+        }
+
+        .barra {
+            background-color: #2b2d42;
+            padding: 15px 15%;
+            color: #ffffff;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .producto-detalle {
+            width: 85%;
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .imagen-producto {
+            width: 50%;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .informacion {
+            width: 50%;
+        }
+
+        .stock {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 15px 0;
+            color: #1a1b26;
+        }
+
+        .estrellas {
+            color: #f1c40f;
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        .precio {
+            color: #d90429;
+            font-size: 32px;
+            font-weight: 800;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #ef233c;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 18px 40px;
+            margin-top: 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #d90429;
+        }
+
+        .boton:active {
+            transform: scale(0.95);
+        }
+
+        .volver {
+            display: block;
+            margin-top: 25px;
+            color: #8d99ae;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .volver:hover {
+            color: #2b2d42;
+        }
+
+        .carrito {
+            display: none;
+            width: 85%;
+            max-width: 1200px;
+            margin: 20px auto 50px auto;
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 30px;
+            box-sizing: border-box;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .carrito h2 {
+            margin: 0 0 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #edf2f4;
+            color: #2b2d42;
+        }
+
+        .producto-carrito {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .controles {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .controles button {
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .menos, .mas {
+            background-color: #8d99ae;
+            color: white;
+        }
+
+        .menos:hover, .mas:hover {
+            background-color: #2b2d42;
+        }
+
+        .eliminar {
+            background-color: #ef233c;
+            color: white;
+        }
+
+        .eliminar:hover {
+            background-color: #d90429;
+        }
+
+        .total {
+            text-align: right;
+            font-size: 24px;
+            font-weight: 800;
+            color: #1a1b26;
+            margin-top: 25px;
+        }
+
+        .vaciar {
+            display: block;
+            width: 200px;
+            margin-left: auto;
+            border: none;
+            background-color: #2b2d42;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .vaciar:hover {
+            background-color: #1a1b26;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="barra">
+        EQUIPO PREMIUM > <strong> QUANTUM X </strong>
+    </div>
+
+    <div class="producto-detalle">
+
+        <div class="imagen-producto">
+            <div class="galeria">
+                <img src="SmartWatch 1.jpg" alt="Quantum X Vista Frontal">
+            </div>
+        </div>
+
+        <div class="informacion">
+
+            <span class="stock"> DISPONIBLE </span>
+
+            <p class="estrellas"> ★★★★★ </p>
+
+            <h1>
+                Quantum X
+            </h1>
+
+            <p>
+                <span class="precio">
+                    S/ 1,890.00
+                </span>
+            </p>
+
+            <p style="color: #6c757d; line-height: 1.6;">
+                El reloj inteligente de próxima generación, equipado con sensores biométricos de alta precisión para medir tu ritmo cardíaco y niveles de oxígeno.
+            </p>
+
+            <p><strong>Especificaciones Técnicas:</strong></p>
+
+            <ul style="color: #6c757d; line-height: 1.8;">
+                <li>Pantalla OLED de 1.7 pulgadas</li>
+                <li>Sensor ECG y Monitor de SpO2</li>
+                <li>Batería de larga duración (hasta 10 días)</li>
+                <li>Cuerpo de aluminio aeroespacial</li>
+            </ul>
+
+            <a href="#" class="boton" onclick="agregarCarrito()">
+                AGREGAR AL CARRITO
+            </a>
+
+            <a href="index.html" class="volver">
+                ← Regresar al catálogo
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="carrito" id="carrito">
+
+        <h2>Tu Carrito</h2>
+
+        <div id="productosCarrito"></div>
+
+        <div class="total">
+            Total: S/ <span id="total">0.00</span>
+        </div>
+
+        <button class="vaciar" onclick="vaciarCarrito()">
+            Vaciar Carrito
+        </button>
+
+    </div>
+
+    <!-- Script con localStorage para Quantum X -->
+    <script>
+        const productoActual = {
+            id: 'quantum_x',
+            nombre: 'Quantum X',
+            precio: 1890.00
+        };
+
+        let carrito = JSON.parse(localStorage.getItem('carritoTienda')) || [];
+
+        window.onload = function() {
+            let item = carrito.find(p => p.id === productoActual.id);
+            if (item && item.cantidad > 0) {
+                mostrarCarrito();
+            }
+        };
+
+        function agregarCarrito() {
+            event.preventDefault();
+            let item = carrito.find(p => p.id === productoActual.id);
+            
+            if (item) {
+                item.cantidad++;
+            } else {
+                carrito.push({ ...productoActual, cantidad: 1 });
+            }
+            
+            guardarYActualizar();
+        }
+
+        function aumentar() {
+            let item = carrito.find(p => p.id === productoActual.id);
+            if (item) {
+                item.cantidad++;
+                guardarYActualizar();
+            }
+        }
+
+        function disminuir() {
+            let item = carrito.find(p => p.id === productoActual.id);
+            if (item) {
+                if (item.cantidad > 1) {
+                    item.cantidad--;
+                    guardarYActualizar();
+                } else {
+                    eliminarProducto();
+                }
+            }
+        }
+
+        function eliminarProducto() {
+            carrito = carrito.filter(p => p.id !== productoActual.id);
+            guardarYActualizar();
+            document.getElementById("carrito").style.display = "none";
+        }
+
+        function vaciarCarrito() {
+            carrito = [];
+            guardarYActualizar();
+            document.getElementById("carrito").style.display = "none";
+        }
+
+        function guardarYActualizar() {
+            localStorage.setItem('carritoTienda', JSON.stringify(carrito));
+            mostrarCarrito();
+        }
+
+        function mostrarCarrito() {
+            let item = carrito.find(p => p.id === productoActual.id);
+            
+            if (!item || item.cantidad === 0) {
+                document.getElementById("carrito").style.display = "none";
+                return;
+            }
+
+            document.getElementById("carrito").style.display = "block";
+            
+            document.getElementById("productosCarrito").innerHTML = `
+                <div class="producto-carrito">
+                    <strong style="font-size: 18px; color: #2b2d42;">${item.nombre}</strong>
+                    <div style="color: #6c757d;">S/ ${item.precio.toFixed(2)} c/u</div>
+                    <div class="controles">
+                        <button class="menos" onclick="disminuir()">-</button>
+                        <span style="font-weight: bold; width: 20px; text-align: center;">${item.cantidad}</span>
+                        <button class="mas" onclick="aumentar()">+</button>
+                        <button class="eliminar" onclick="eliminarProducto()">Eliminar</button>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById("total").textContent = (item.precio * item.cantidad).toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
